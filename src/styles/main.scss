@@ -1,0 +1,154 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   ROOT & BODY
+========================= */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+
+h2 {
+  margin-bottom: 12px;
+}
+
+h3 {
+  margin-bottom: 6px;
+}
+
+/* =========================
+   FORM SEARCH
+========================= */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+
+  input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+      border-color: #4f46e5;
+    }
+  }
+
+  button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4f46e5;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #4338ca;
+    }
+  }
+}
+
+/* =========================
+   RESTAURANT LIST
+========================= */
+ul {
+  list-style: none;
+}
+
+li {
+  background: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+  p {
+    margin: 4px 0;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    background-color: #16a34a;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #15803d;
+    }
+  }
+}
+
+/* =========================
+   DETAIL VIEW
+========================= */
+.detail {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+
+  button {
+    margin-bottom: 15px;
+    background-color: #ef4444;
+
+    &:hover {
+      background-color: #dc2626;
+    }
+  }
+}
+
+/* =========================
+   LOADING & ERROR
+========================= */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
